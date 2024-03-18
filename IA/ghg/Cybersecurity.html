@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: inline;
+            flex-direction: column;
+            height: 100vh;
+
+        }
+
+
+
+
+
+        ul {
+  list-style: none;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  /* filter: blur(1px); */
+  
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+}
+ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: rgb(255, 136, 136);
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.3s;
+
+}
+ul li .dropdown li {
+  display: block;
+  transition: 0.3s;
+
+}
+ul li .dropdown {
+  width: 100%;
+  background-color: rgba(255, 30, 49, 0.1);
+  position: absolute;
+  z-index: 999;
+  display: none;
+  transition: 0.3s;
+
+}
+ul li a:hover {
+  background: rgba(255, 30, 49, 0.1);
+}
+ul li:hover .dropdown {
+  display: block;
+}
+
+hr {
+  width: 70%;
+  margin: 0 auto;
+  color: rgb(144, 32, 34);
+  border: 1.5px solid rgb(144, 32, 34) ;
+}
+
+
+        h1 {
+            color: #333;
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: left;
+            font-size: larger;
+        }
+
+        pre {
+            margin-bottom: 15px;
+            text-align: left;
+            font-size: larger;
+            margin-bottom: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: larger;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #b15a5a;
+            color: #f0f0f0;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            /* Smaller padding */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 10px 0 0 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #buttonved {
+            background-color: #007BFF;
+            /* Blue background color */
+            color: white;
+            padding: 9px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 10px 0;
+            margin-left: 20px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+
+        #cybersecurity-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            /* Center the image horizontally */
+            justify-content: center;
+            display: flex;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+
+        #immg4,
+        #immg5,
+        #immg6,
+        #immg7,
+        #immg8 {
+            height: 200px;
+            width: 250px;
+            display: inline-block;
+            margin-right: 0px;
+
+        }
+
+
+        .image-container p {
+            font-size: larger;
+            text-align: center;
+            /* Center the text */
+        }
+
+        .image-container a {
+            text-decoration: none;
+
+        }
+
+        .image-container figure {
+            margin: 0;
+
+        }
+
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+    <ul>
+        <li>
+            <a href="" style="border-right: 2px solid rgb(255, 136, 136);"> majors </a>
+            
+            <ul class="dropdown">
+                <li>
+                <a href="form.html">home </a></li><hr>
+                <li><a href="ai.html"> AI </a></li><hr>
+                <li><a href="cs.html">CS </a></li><hr>
+                <li><a href="network.html">Network </a></li>
+                
+            </ul>
+        </li>
+    </ul>
+
+
+    <img id="cybersecurity-image"
+        src="https://s3.eu-west-2.amazonaws.com/uploads.3alampro.com/2021/January/EzHMmFNIMRvB7hkiUsVFPIbsM1re7tgaLqPMFHFP.jpeg"
+        alt="Cybersecurity Image">
+
+    <h1>Cybersecurity Information</h1>
+
+    <p>
+        Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These
+        cyberattacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from
+        users via ransomware; or interrupting
+        normal business processes.
+        Implementing effective cybersecurity measures is particularly
+        challenging today because there are more devices than people, and attackers are becoming more
+        innovative.Cybersecurity specialists play a
+        crucial role in identifying weaknesses in systems, implementing necessary security measures, and developing
+        security strategies to counter potential cyber risks.
+        One unique aspect of the cybersecurity field is its dynamic nature. With the evolution of technology, new
+        threats and vulnerabilities emerge, requiring continuous
+        adaptation and ongoing learning to address them. Therefore,
+        cybersecurity professionals must stay constantly informed about the latest security practices, industry trends,
+        and emerging threats.
+        In our current times, the significance of cybersecurity has significantly increased due to the
+        growing reliance on digital systems and the continuous evolution of cyber threats. Consequently, organizations,
+        governments, and companies find it imperative to prioritize
+        cybersecurity to safeguard sensitive information, maintain operational continuity, and protect against financial
+        losses and other damages resulting from cyber attacks.</p>
+
+    <p>A short summary of the general concept :<button id="buttonved" onclick="openModal()"> Cyber Security In 7 Minutes
+        </button></p>
+
+    <!-- Modal contentid -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/inWWhr5tnEA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <h3 style="margin-left: 19px;">Top 6 Cyber Tips</h3>
+    <ol>
+        <li>Keep personal information private</li>
+        <li>Use caution to avoid bad actors</li>
+        <li>Update software regularly</li>
+        <li>Create strong passwords by using paraphrases</li>
+        <li>Use two-step verification whenever possible</li>
+        <li>Manage your privacy settings</li>
+    </ol>
+
+    <h2> The personal attributes of cybersecurity students</h2>
+    <p> Cybersecurity students often possess specific personal attributes that contribute to their success in this
+        field. While individual traits may vary, here are some common academic and personal qualifications found in
+        cybersecurity students:</p>
+
+    <h4> Academic Qualifications</h4>
+    <p> The field of cybersecurity typically requires a combination of academic qualifications and relevant practical
+        experience. While specific requirements may vary depending on the position and organization</p>
+    <h4> Personal and Practical Skills</h4>
+
+    <p>Students specializing in cybersecurity should possess a set of valuable personal and practical skills in this
+        field. Here are some required personal and practical skills:</p>
+    <br>
+    <p><b>Strong Analytical Skills</b> : Cybersecurity requires the ability to analyze complex systems, identify
+        weaknesses, and understand attack patterns. Students with strong analytical skills can dissect problems more
+        clearly and make informed decisions when it comes to securing computer systems and networks.</p>
+    <br>
+    <p><b> Attention to Detail: </b>Cybersecurity professionals need to pay close attention to details to detect
+        potential threats and vulnerabilities. Students who are detail-oriented can identify deviations in system logs,
+        network traffic, or code instructions, helping pinpoint potential security risks.</p>
+    <br>
+    <p><b> Curiosity and Continuous Learning: </b>The field of cybersecurity constantly evolves with the emergence of
+        new threats and technologies. Therefore, students must have a scientific curiosity and a thirst for knowledge to
+        stay abreast of the latest trends and new technologies.</p>
+    <br>
+
+    <p><b> Problem-Solving Skills</b>: Cybersecurity often involves solving complex problems and coming up with
+        innovative solutions. Therefore, students should excel in problem-solving skills, think creatively, analyze
+        various scenarios, and develop effective strategies to confront security challenges.</p>
+    <p> These skills are crucial for success in the dynamic and ever-changing field of cybersecurity.</p>
+
+    <br>
+   <p>read more about <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">AI</a></p>
+    <br>
+    <h2>Departments of cybersecurity specialization</h2>
+
+    <ul>
+        <li><strong>Network Security:</strong> This specialization focuses on securing computer networks and systems.
+            Students learn about network protocols, firewalls, intrusion detection systems, VPN networks, and other
+            network security techniques. They acquire the necessary skills to design, implement, and manage secure
+            networks.</li>
+
+
+        <br>
+        <li><strong>Application Security:</strong> This specialization concentrates on securing software and
+            applications. Students familiarize themselves with secure coding practices, the Secure Development Lifecycle
+            (SDLC), vulnerability assessments, penetration testing, and techniques for deploying secure applications.
+            Graduates from this specialization can work as application security engineers.</li>
+        <br>
+        <li><strong>Cloud Security:</strong> This specialization emphasizes securing cloud computing environments.
+            Students learn about cloud architecture, virtualization, Identity and Access Management (IAM), encryption,
+            and securing cloud services. They develop skills in designing and implementing secure cloud environments.
+        </li>
+        <br>
+        <li><strong>Encryption:</strong> This specialization focuses on the principles and techniques of encryption. It
+            involves understanding encryption algorithms, protocols, and digital signatures. Students gain skills in
+            designing and implementing secure encryption systems and can work as specialists or consultants in
+            encryption.</li>
+        <br>
+        <li><strong>Risk Management:</strong> This specialization centers on assessing and managing cybersecurity risks
+            within organizations. Students become familiar with risk assessment methodologies, threat modeling, risk
+            mitigation strategies, and business continuity planning.</li>
+        <br>
+        <li><strong>Cybersecurity Analytics:</strong> This specialization involves leveraging data analytics and machine
+            learning techniques for cybersecurity. Students learn data analysis, behavioral analytics, threat
+            intelligence, and gain skills in using data-driven methods to detect and respond to cybersecurity threats.
+        </li>
+    </ul>
+
+
+    <h2>Number of years of study in cybersecurity
+    </h2>
+
+    <p> A bachelor's degree in cybersecurity takes 3 or 4 years in most countries, while master's courses in
+        cybersecurity take between 1 and 2 years.</p>
+    <h2>Top Cybersecurity Threats</h2>
+
+    <p>Here are some of the top cybersecurity threats:</p>
+
+    <table>
+        <tr>
+            <th>Threat</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Malware</td>
+            <td>Malicious software designed to harm or exploit systems.</td>
+        </tr>
+        <tr>
+            <td>Phishing</td>
+            <td>Fraudulent attempts to obtain sensitive information through disguised communication.</td>
+        </tr>
+        <tr>
+            <td>DDoS Attacks</td>
+            <td>Overwhelming a system with a flood of internet traffic to disrupt normal functioning.</td>
+        </tr>
+        <tr>
+            <td>Phishing</td>
+            <td>Phishing is the practice of sending fraudulent emails that resemble emails from reputable sources. The
+                aim is to steal sensitive data like credit card numbers and login information.</td>
+        </tr>
+    </table>
+
+    <h3>Top 3 Universities to Study Cybersecurity (in the World)</h3>
+    <div class="image-container">
+        <a href="https://www.dsucyber27.com/?gad_source=1&gclid=CjwKCAiAk9itBhASEiwA1my_6-uVaANBOWGVBKKu4i4GSPmrJrQu8lwFjVl_7QtYZBUFZte1rm0SghoC_UAQAvD_BwE&gclsrc=aw.ds"
+            target="_blank">
+            <figure>
+                <p style="font-size: larger;">The California State University</p>
+                <img id="immg4"
+                    src="https://enjoyorangecounty.com/wp-content/uploads/2023/06/the-california-state-university-schools.jpg"
+                    alt="">
+            </figure>
+        </a>
+        <a href="https://www.bakertilly.com/specialties/cybersecurity-risk-assessments?utm_source=googleads&utm_medium=paidsearch&utm_campaign=Team+5%3A+Cybersecurity+Risk+Assessment+%28+Risk+advisory%3B+cybersecurity+%29&utm_id=281495680490865&utm_content=alwayson&gclid=CjwKCAiAk9itBhASEiwA1my_6xhvlVxfVm0avJADH1vQq6iMP-RZxT6hDa3S_UW_s32jlX2wOAF3uxoC8TwQAvD_BwE"
+            target="_blank">
+            <figure>
+                <p>Carnegie Mellon University</p><img id='immg5'
+                    src="https://scontent.fjed4-4.fna.fbcdn.net/v/t39.30808-6/291599125_419774906844638_4720576262044910396_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=LCCOMAD4q_AAX8F7a0Z&_nc_ht=scontent.fjed4-4.fna&oh=00_AfDM3TE4WmJ5o-qxj4r8E-zzx2AhWzeEog18yWo3roOo4g&oe=65BBE4B4"
+                    alt="">
+            </figure>
+        </a>
+        <a href="https://carahevents.carahsoft.com/Event/Details/429899-agile-ed?gclid=CjwKCAiAk9itBhASEiwA1my_633l1MsoklVQlafgGLwzKjBEmsXpz6lblklKG6fp8RCjULoC9XNV4xoC600QAvD_BwE"
+            target="_blank">
+            <figure>
+                <p>George Washington University</p><img id='immg6'
+                    src="https://images.squarespace-cdn.com/content/v1/623126b50d2dfb281caaafd3/6543e70e-8e91-48f1-b726-4bf840edc505/George-Washington-University-logo.jpg?format=500w"
+                    alt="">
+            </figure>
+        </a>
+    </div>
+    <br>
+    <h3> Top 3 Universities to Study Cybersecurity (in Saudi Arabia)</h3>
+    <div class="image-container">
+        <a href="https://www.alarabiya.net/saudi-today/2019/01/27/%D9%83%D9%84%D9%8A%D8%A9-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D8%AA%D8%B7%D8%B1%D8%AD-%D9%82%D8%B1%D9%8A%D8%A8%D8%A7-%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D9%88%D8%B3-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A"
+            target="_blank">
+            <figure>
+                <pre style="font-size: 18px;">Prince Mohammed bin Salman
+         College</pre>
+                <img id="immg4" src="https://pbs.twimg.com/media/Dx6uKdFXcAARvI2.jpg" alt="">
+            </figure>
+        </a>
+        <a href="https://ascs.ksu.edu.sa/ar/node/788" target="_blank">
+            <figure>
+                <p>King Saud University
+                </p><img id='immg5'
+                    src="https://www.habibtradingco.com/UploadDir/8a5d213d-3453-4e8d-8235-00a99f795816.jpg" alt="">
+            </figure>
+        </a>
+        <a href="https://uqu.edu.sa/cis/123474" target="_blank">
+            <figure>
+                <p>um Al-Qura University</p><img id='immg6'
+                    src="https://yt3.ggpht.com/a/AATXAJxLQ9kALWuKxuONCLiFTBicbqKN4xL97eq7fA=s900-c-k-c0xffffffff-no-rj-mo"
+                    alt="">
+            </figure>
+        </a>
+    </div>
+    
+
+    <script>
+       
+
+        function openModal() {
+            document.getElementById('videoModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            // Close
+            document.getElementById('videoModal').style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('videoModal')) {
+                closeModal();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>network Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: inline;
+            flex-direction: column;
+            height: 100vh;
+
+        }
+
+
+        ul {
+  list-style: none;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  /* filter: blur(1px); */
+  
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+}
+ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: rgb(85, 75, 180);
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.3s;
+
+}
+ul li .dropdown li {
+  display: block;
+  transition: 0.3s;
+
+}
+ul li .dropdown {
+  width: 100%;
+  background-color: rgba(109, 30, 255, 0.1);
+  position: absolute;
+  z-index: 999;
+  display: none;
+  transition: 0.3s;
+
+}
+ul li a:hover {
+  background: rgba(109, 30, 255, 0.1);
+}
+ul li:hover .dropdown {
+  display: block;
+}
+
+hr {
+  width: 70%;
+  margin: 0 auto;
+  color: rgb(36, 32, 144);
+  border: 1.5px solid rgb(36, 32, 144) ;
+}
+
+
+
+
+        h1 {
+            color: #333;
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: left;
+            font-size: larger;
+        }
+
+        pre {
+            margin-bottom: 15px;
+            text-align: left;
+            font-size: larger;
+            margin-bottom: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: larger;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #7f32c2;
+            color: #f0f0f0;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            /* Smaller padding */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 10px 0 0 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #buttonved {
+            background-color: #007BFF;
+            /* Blue background color */
+            color: white;
+            padding: 9px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 10px 0;
+            margin-left: 20px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+
+        #cybersecurity-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            /* Center the image horizontally */
+            justify-content: center;
+            display: flex;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+
+        #immg4,
+        #immg5,
+        #immg6,
+        #immg7,
+        #immg8 {
+            height: 200px;
+            width: 250px;
+            display: inline-block;
+            margin-right: 0px;
+
+        }
+
+
+        .image-container p {
+            font-size: larger;
+            text-align: center;
+            /* Center the text */
+        }
+
+        .image-container a {
+            text-decoration: none;
+
+        }
+
+        .image-container figure {
+            margin: 0;
+
+        }
+
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .te{
+            color: darkblue;
+        }
+        .x2{
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <ul>
+        <li>
+            <a href="" style="border-right: 2px solid rgb(85, 75, 180);"> majors </a>
+            
+            <ul class="dropdown">
+                <li>
+                <a href="form.html">home </a></li><hr>
+                <li><a href="ai.html"> AI </a></li><hr>
+                <li><a href="Cybersecurity.html">Cyber </a></li><hr>
+                <li><a href="cs.html">CS </a></li>
+                
+                
+            </ul>
+        </li>
+    </ul>
+
+
+
+    <img id="cybersecurity-image"
+        src="https://img.freepik.com/premium-photo/technology-network-internet-background_368913-307.jpg"
+        alt="network Image">
+
+    <h1 class="te" style="margin-left: 19px">network Information</h1>
+
+    <p style="margin-left: 19px">
+        A computer network is a system of interconnected devices, such as computers and servers, 
+        that enables the sharing of data and resources. Networks come in various forms, including 
+        Local Area Networks<ins>(LANs) </ins> within a confined area, Wide Area Networks <ins>(WANs)</ins> spanning larger 
+        geographic regions, and wireless networks <ins>(WLANs)</ins> utilizing technologies like Wi-Fi. Key 
+        components include nodes <ins>(devices)</ins>, links <ins>(communication pathways)</ins>, routers managing traffic, 
+        and switches facilitating efficient data transfer. Protocols like TCP/IP form the backbone of 
+        communication, defining how data is transmitted across the network. Different topologies, such
+         as bus, star, ring, and mesh, dictate how devices are interconnected. Security measures, 
+         including firewalls, encryption, and Virtual Private Networks<ins> (VPNs)</ins>, safeguard against 
+         unauthorized access. The Internet, a global network based on these principles, connects 
+         diverse networks worldwide, fostering communication, collaboration, and the exchange of 
+         information and services.</p>
+
+    <p style="margin-left: 19px">A short summary of the general concept :<button id="buttonved" onclick="openModal()"> video of network
+        </button></p>
+
+    <!-- Modal contentid -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3QhU9jd03a0?si=sR6ebcQ-rtqkurd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <h3 style="margin-left: 19px;"> 5 Types of Networks</h3>
+    <ol>
+        <li>Computer Network</li>
+        <li>Social Network</li>
+        <li>Neural Network</li>
+        <li>Transportation Network</li>
+        <li>Electricity Grid</li>
+    </ol>
+
+    <h2 class="x2" style="margin-left: 19px"> Internet </h2>
+    <p style="margin-left: 19px"> The Internet itself is a global network that connects 
+        millions of computers and networks worldwide, allowing information
+         and data to be exchanged globally.</p>
+
+    <h2 class="x2" style="margin-left: 19px"> Definition:</h2>
+    <p style="margin-left: 19px">  computer network is a collection of interconnected devices, such as computers, servers, routers, and switches, that are capable of sharing 
+        data and resources. Networks can be classified based on their size, scope, and purpose.</p>
+        
+    <h2 class="x2" style="margin-left: 19px">  Types of Networks:</h2>
+
+    <p style="margin-left: 19px"><b>Local Area Network (LAN):</b> A LAN is a network limited to a small geographic area, such as a single building or campus. Computers and devices within a LAN can communicate with each other at high speeds.
+<br>
+<br>
+        <b>Wide Area Network (WAN):</b> A WAN covers a larger geographical area and typically connects multiple LANs. The Internet is an example of a global WAN.
+        <br> 
+        <br>   
+        <b>Wireless Local Area Network (WLAN):</b>  WLANs use wireless communication to connect devices within a limited area, often using Wi-Fi technology.
+        <br>
+        <br>
+        <b>Metropolitan Area Network (MAN):</b>  A MAN covers a larger geographic area than a LAN but is smaller than a WAN, typically serving a city or a large campus.
+        <br>
+        <br>
+        <b>Personal Area Network (PAN):</b>  A PAN is a network for personal devices, typically within the range of an individual person, like connecting a smartphone to a laptop via Bluetooth.</p>
+    <br>
+    <br>
+    <h2 class="x2" style="margin-left: 19px">Network Components:</h2>
+    <p style="margin-left: 19px">
+
+       <b>Nodes:</b>  Devices connected to the network, such as computers, servers, printers, and other electronic devices.
+        <br>
+        <br>
+       <b>Links:</b>  The communication pathways that connect nodes. Links can be wired (e.g., Ethernet cables) or wireless (e.g., Wi-Fi).
+       <br>
+       <br>
+       <b>Router:</b>   Manages data traffic between different networks. Routers operate at the network layer of the OSI model.
+       <br>
+       <br>
+       <b>Switch:</b>   Connects devices within the same network, enabling efficient data transfer. Switches operate at the data link layer.
+       <br>
+       <br>
+       <b>Hub:</b>   Older technology that connects devices in a LAN but operates at the physical layer without the intelligence of a switch.
+    <br>
+    <br>
+    <h2 class="x2" style="margin-left: 19px">Protocols</h2>
+    <p style="margin-left: 19px">
+        <b>Transmission Control Protocol/Internet Protocol (TCP/IP):</b> The fundamental suite of protocols that underlies the Internet and most modern networks.
+         <br> 
+         <br>
+       <b>Ethernet:</b>  A common LAN protocol that defines how data packets are placed on the network.
+        <br>
+        <br>
+        <b>Wi-Fi (802.11):</b>  A set of standards for wireless local network communication..
+        <br> 
+        <br>
+    </p>
+    <br>
+    
+    <br>
+    <br>
+    <h2 class="x2" style="margin-left: 19px">DNetwork Topologies:</h2>
+
+    <ul style="margin-left: 19px">
+        <li><strong>Bus:</strong> All devices share a single communication line..</li>
+
+
+        <br>
+        <li><strong>Star:</strong> All devices are connected to a central hub or switch.</li>
+        <br>
+        <li><strong>Ring:</strong> Devices are connected in a circular fashion
+        </li>
+        <br>
+        <li><strong>Mesh</strong> Devices are interconnected, providing multiple paths for data.</li>
+        <br>
+    </ul>
+
+
+    <h2 class="x2" style="margin-left: 19px;">Number of years of study in network
+    </h2>
+
+    <p style="margin-left: 19px;"> A bachelor's degree in network takes 3 or 4 years in most countries, while master's courses in
+        network take between 1 and 2 years.</p>
+    <h2 class="x2" style="margin-left: 19px;">Top Cybersecurity Threats</h2>
+
+    <p style="margin-left: 19px;">Networks face various threats that can compromise their integrity, 
+        confidentiality, and availability. Common threats to networks include:</p>
+
+    <table>
+        <tr>
+            <th>Threat</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Password Attacks</td>
+            <td>Techniques like brute-force attacks, where an attacker systematically tries 
+                all possible passwords, or password 
+                sniffing can compromise user credentials..</td>
+        </tr>
+        <tr>
+            <td>Insider Threats</td>
+            <td>Malicious actions or negligence by individuals within an organization can pose a significant 
+                risk, as insiders may have access to sensitive data and systems..</td>
+        </tr>
+        <tr>
+            <td>Ransomware</td>
+            <td>This type of malware encrypts data on a victim's system, demanding payment for its release.
+                 Ransomware attacks can have severe consequences for both individuals and organizations..</td>
+        </tr>
+        <tr>
+            <td>Social Engineering</td>
+            <td>Techniques such as manipulating individuals into divulging sensitive information or 
+                exploiting trust relationships can be used to gain unauthorized access.</td>
+        </tr>
+    </table>
+
+    <h3>The most powerful network systems </h3>
+    <div class="image-container">
+        <a href="https://aws.amazon.com/ar/free/?gclid=EAIaIQobChMI-fauqcGNhAMVu1NBAh2K4gJ3EAAYASAAEgI5Q_D_BwE&trk=15faae9b-ab87-4e8f-8946-c46e8264e383&sc_channel=ps&ef_id=EAIaIQobChMI-fauqcGNhAMVu1NBAh2K4gJ3EAAYASAAEgI5Q_D_BwE:G:s&s_kwcid=AL!4422!3!645208863523!e!!g!!amazon%20web%20services!19572078132!145087520613&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all"
+            target="_blank">
+            <figure>
+                <p style="font-size: larger;">Amazon Web Services (AWS):</p>
+                <img id="immg4"
+                    src="https://i.pcmag.com/imagery/reviews/0179dSC1AqaTy8DbcTJMDYE-7.fit_scale.size_1028x578.v1569472044.jpg"
+                    alt="aws image">
+            </figure>
+        </a>
+        <a href="https://cloud.google.com/gcp?utm_source=google&utm_medium=cpc&utm_campaign=emea-sa-all-ar-bkws-all-all-trial-e-gcp-1707574&utm_content=text-ad-none-any-DEV_c-CRE_548685055648-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+-+GCP+-+General+-+v3-KWID_43700060393215983-aud-488003287435:kwd-6458750523-userloc_9076716&utm_term=KW_google%20cloud-NET_g-PLAC_&&gad_source=1&gclid=EAIaIQobChMI4d3nm8ONhAMVSJtQBh31wAF5EAAYASAAEgL7JPD_BwE&gclsrc=aw.ds"
+            target="_blank">
+            <figure>
+                <p>Google Cloud</p><img id='immg5'
+                    src="https://www.freecodecamp.org/news/content/images/size/w2000/2020/10/gcp.png"
+                    alt="Google Cloud image">
+            </figure>
+        </a>
+        <a href="https://azure.microsoft.com/en-us"
+            target="_blank">
+            <figure>
+                <p>Microsoft Azure</p><img id='immg6'
+                    src="https://www.datalinknetworks.net/hs-fs/hubfs/Microsoft_Azure-Logo.wine.png?width=1500&height=1000&name=Microsoft_Azure-Logo.wine.png"
+                    alt="Microsoft Azure imge">
+            </figure>
+        </a>
+    </div>
+    <br>
+    
+
+    <script>
+       
+
+        function openModal() {
+            document.getElementById('videoModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            // Close
+            document.getElementById('videoModal').style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('videoModal')) {
+                closeModal();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

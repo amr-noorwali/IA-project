@@ -1,0 +1,160 @@
+:root {
+
+    --primarycolor: #0099ff;
+    --secondcolor: #6eccff;
+    --therdcolor: #d3eafc;
+    --lightcolor: #ffffff;
+    --lightcolor2: #e4e4e4;
+    --shadow: #8fbaff;
+    --darkcolor: #7b7b7b ;
+}
+
+
+
+
+body {
+    background-image: url('pic/bg3.jpeg');
+    background-size: cover ;
+    
+
+}
+
+
+
+.container {
+    max-width: 400px;
+    /* background: var(--primarycolor); */
+    /* background: linear-gradient(0deg, var(--primarycolor) 0%, var(--primarycolor) 100%); */
+    border-radius: 40px;
+    padding: 25px 35px;
+    /* border: 2px solid var(--therdcolor); */
+    /* box-shadow: var(--primarycolor) 0px 30px 30px -20px; */
+    margin: 80px;
+    margin-right: 120px;
+    float: right;
+    top: 50%;
+
+
+
+    box-shadow: 1px 1px 20px var(--shadow);
+    border-bottom: 2px solid var(--therdcolor);
+    border-left: 2px solid var(--therdcolor);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    
+  }
+  
+  .heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--primarycolor);
+  }
+  
+  .form {
+    margin-top: 20px;
+    height: 450px;
+  }
+  
+  .form .input {
+    width: 100%;
+    background: var(--therdcolor);
+    /* border: none; */
+    padding: 15px 20px;
+    border: 0.5px solid var(--primarycolor);
+    border-radius: 20px ;
+    margin: 50px;
+    margin-top: 15px;
+    margin-left: -20px;
+    /* box-shadow: var(--shadow) 5px 5px 5px -3px; */
+    border-inline: 2px solid transparent;
+    transition: 0.5s;
+  }
+  
+  .form .input::-moz-placeholder {
+    color: var(--lightcolor);
+  }
+  
+  .form .input::placeholder {
+    color: var(--darkcolor);
+  }
+  
+  .form .input:focus {
+    outline: none;
+    border-inline: 3px solid var(--primarycolor);
+  }
+  
+  .form .forgot-password {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+  }
+  
+  .form .forgot-password a {
+    font-size: 20px;
+    color:  var(--therdcolor);
+    text-decoration: none;
+    
+  }
+  
+  .form .login-button {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--primarycolor) 0%, var(--secondcolor) 100%);
+    color: var(--lightcolor);
+    padding-block: 15px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow:  var(--shadow) 0px 20px 10px -15px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 50px;
+  }
+  
+  .form .login-button:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow) 0px 23px 10px -20px;
+  }
+  
+  .form .login-button:active {
+    transform: scale(0.95);
+    box-shadow: var(--shadow) 0px 15px 10px -10px;
+  }
+
+  .form .login-button2 {
+    display: block;
+    width: 20%;
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--primarycolor) 0%, var(--secondcolor) 100%);
+    color: var(--lightcolor);
+    padding-block: 15px;
+    margin: 20px auto;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow:  var(--shadow) 0px 20px 10px -15px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 50px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .form .login-button2:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow) 0px 23px 10px -20px;
+  }
+  
+  .form .login-button2:active {
+    transform: scale(0.95);
+    box-shadow: var(--shadow) 0px 15px 10px -10px;
+  }
+
+
+  
+  
