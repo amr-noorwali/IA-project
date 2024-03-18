@@ -1,0 +1,1 @@
+This project was a requirement for our Internet Application course, and our team, consisting of four people, collaborated on programming five pages: Home, AI, CS, Cyber Security, and Internet. My responsibility within the team was to design and develop the AI and Home pages.
